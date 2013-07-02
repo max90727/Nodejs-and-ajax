@@ -28,7 +28,7 @@ function ajaxJSONPSetup() {
     		type: "GET",
     		dataType: "jsonp",
 		cache: 'false',
-		jsonp: 'cb',
+		jsonp: 'cb',					//see url
 		timeout: 5000,
 		success: function(data) {	//here also returns json data(an javascript object)
 			execute(data);
