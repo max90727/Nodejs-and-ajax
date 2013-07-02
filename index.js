@@ -32,7 +32,8 @@ app.all('/ajax/EU', function(req, res, next) {  		//cors domain should be solved
 app.get('/ajax/EU', function(req, res) {
   console.log(req.body.objectData);
   res.contentType('json');
-  res.send({ some: JSON.stringify({response:'json'}) });
+  //res.send({ some: JSON.stringify({response:'json'}) });      //send json data
+  res.sendfile('ajax/'+ req.query.filePath + '.json';  //send json file
 });
 
 //app.get('/', routes.index);
