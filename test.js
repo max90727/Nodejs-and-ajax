@@ -24,7 +24,7 @@ function ajaxJSONSetup(country_path) {
 
 function ajaxJSONPSetup() {
 	$.ajax({
-		url: "http://localhost:3000/JSONP?cb=?",
+		url: "http://localhost:3000/JSONP?cb=?",	//a callback funtion must be pointed out(http://...?cb=?)
     		type: "GET",
     		dataType: "jsonp",
 		cache: 'false',
